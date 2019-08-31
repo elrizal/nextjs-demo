@@ -1,14 +1,13 @@
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import Header from '../../../components/header'
-
+import NavBar from '../../../components/navbar';
 const Post = () => {
   const router = useRouter()
   const { id } = router.query
 
   return (
     <>
-      <Header />
+      <NavBar />
       <h1>Post: {id}</h1>
       <ul>
         <li>

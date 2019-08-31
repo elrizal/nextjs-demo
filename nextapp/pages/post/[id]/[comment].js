@@ -1,5 +1,4 @@
 import { useRouter } from 'next/router'
-import Header from '../../../components/header'
 
 const Comment = () => {
   const router = useRouter()
@@ -7,7 +6,6 @@ const Comment = () => {
 
   return (
     <>
-      <Header />
       <h1>Post: {id}</h1>
       <h1>Comment: {comment}</h1>
     </>
