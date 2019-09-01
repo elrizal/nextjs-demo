@@ -1,16 +1,20 @@
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import NavBar from '../../../components/navbar';
+import Layout from '../../layout';
+import Container from '@material-ui/core/Container';
+
 const Post = () => {
   const router = useRouter()
   const { id } = router.query
 
   return (
     <>
-      <NavBar />
-      <h1>Post: {id}</h1>
+    <Layout>
+    <Container maxWidth="sm">
+
+    <h1>Post: {id}</h1>
       <ul>
-        <li>
+        <li> 
           <Link href='/post/[id]/[comment]' as={`/post/${id}/first-comment`}>
             <a>First comment</a>
           </Link>
@@ -21,6 +25,8 @@ const Post = () => {
           </Link>
         </li>
       </ul>
+      </Container>
+    </Layout>
     </>
   )
 }
