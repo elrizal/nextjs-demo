@@ -2,16 +2,40 @@
     "allposts": [{
         "id": 1,
         "name": "post 1",
-        "link": "post/['id']",
+        "author" : "The dude",
         "as": "as='/post/first",
-        "body" : "Aliquip minim culpa voluptate excepteur ea incididunt ullamco."
-    }, {
+        "summary" : "About my views of the world",
+        "body" : "Aliquip minim culpa voluptate excepteur ea incididunt ullamco.",
+        "img" : "https://cdn2us.denofgeek.com/sites/denofgeekus/files/styles/main_wide/public/2019/01/jeff-bridges-dude-big-lebowski.jpg?itok=zPqud1Gy",
+        "comments" : [
+            {
+                "comment" : "coool",
+                "as" : "{`/post/${id}/first-comment`}" 
+            },
+            {
+                "comment" : "you're a nerd",
+                "as" : "{`/post/${id}/second-comment`}" 
+            }
+        ]
+    }, 
+    {
         "id": 2,
         "name": "post 2",
-        "link": "post/['id']",
+        "author" : "kid wearing turtle face paint",
+        "summary" : "An answer to your burning questions",
         "as": "as='/post/second",
-        "body" : "Aliquip minim culpa voluptate excepteur ea incididunt ullamco!!"
-
+        "body" : "I like turtles",
+        "img" : "https://material-ui.com/static/images/cards/contemplative-reptile.jpg",
+        "comments" : [
+            {
+                "comment" : "coool",
+                "as" : "{`/post/${id}/first-comment`}" 
+            },
+            {
+                "comment" : "you're a nerd",
+                "as" : "{`/post/${id}/second-comment`}" 
+            }
+        ]
     }]
 }
 
