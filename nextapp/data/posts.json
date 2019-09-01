@@ -1,0 +1,18 @@
+{
+    "allposts": [{
+        "id": 1,
+        "name": "post 1",
+        "link": "post/['id']",
+        "as": "as='/post/first",
+        "body" : "Aliquip minim culpa voluptate excepteur ea incididunt ullamco."
+    }, {
+        "id": 2,
+        "name": "post 2",
+        "link": "post/['id']",
+        "as": "as='/post/second",
+        "body" : "Aliquip minim culpa voluptate excepteur ea incididunt ullamco!!"
+
+    }]
+}
+
+    
