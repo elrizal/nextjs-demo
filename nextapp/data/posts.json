@@ -1,5 +1,5 @@
-{
-    "allposts": [{
+[
+    {
         "id": 1,
         "name": "post 1",
         "author" : "The dude",
@@ -36,7 +36,7 @@
                 "as" : "{`/post/${id}/second-comment`}" 
             }
         ]
-    }]
-}
+    }
+]
 
     

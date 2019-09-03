@@ -22,10 +22,10 @@ const ImgCard = (props) => (
       <CardActionArea>
         <CardMedia
           component="img"
-          alt="Contemplative Reptile"
+          alt="post"
           height="140"
           image={props.img}
-          title="Contemplative Reptile"
+          title="Post"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
