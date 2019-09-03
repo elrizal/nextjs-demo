@@ -1,6 +1,7 @@
 import Container from '@material-ui/core/Container';
 import ImgCard from '../components/card';
 import Layout from './layout';
+import ShowCards from '../containers/ShowCards';
 
 const PostList = () => (
   <>
@@ -11,7 +12,7 @@ const PostList = () => (
         mollit veniam amet ad enim excepteur est laborum. Sunt in minim labore labore adipisicing eiusmod deserunt occaecat duis. 
         Et dolore mollit quis non magna veniam. Dolore cupidatat dolore ad mollit incididunt sunt dolor ipsum in aliqua consectetur culpa. Qui aliqua mollit velit ea Lorem nulla.</p>
     <h2>Recents:</h2>
-    <ImgCard/>
+    <ShowCards/>
     </Container>
   </Layout>
   </>

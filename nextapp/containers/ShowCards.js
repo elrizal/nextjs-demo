@@ -4,12 +4,13 @@ import postData from '../data/posts';
 import Layout from '../pages/layout';
 import axios from 'axios';
 class ShowCards extends Component {
+
   state = {
     posts: [],
     selectedPostId: null
   };
   componentDidMount() {
-    axios.get("https://jsonplaceholder.typicode.com/posts").then(response => {
+    axios.get("../data/posts.json").then(response => {
       const posts = response.data.slice(0, 10);
       const updatedPosts = posts.map(post => {
         return {
@@ -23,6 +24,7 @@ class ShowCards extends Component {
   }
 
   render() {
+    const postedData = this.postData;
     const posts = this.state.posts.map(post => {
       return (
         <ImgCard
@@ -36,9 +38,7 @@ class ShowCards extends Component {
 
     return(
       <div>
-      
           {posts}
-  
       </div>
     );
   }
