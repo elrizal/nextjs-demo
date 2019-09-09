@@ -3,8 +3,8 @@ import ImgCard from '../components/card';
 import postData from '../data/posts';
 import Layout from '../pages/layout';
 import axios from 'axios';
-class ShowCards extends Component {
 
+class ShowCards extends Component {
   state = {
     posts: [],
     selectedPostId: null
@@ -15,7 +15,6 @@ class ShowCards extends Component {
       const updatedPosts = posts.map(post => {
         return {
           ...post,
-          author: "Max"
         };
       });
       this.setState({ posts: updatedPosts });
@@ -31,7 +30,7 @@ class ShowCards extends Component {
           key={post.id}
           name={post.name}
           author={post.author}
-          clicked={() => this.postSelectedHandler(post.id)}
+          // clicked={() => this.postSelectedHandler(post.id)}
         />
       );
     });
