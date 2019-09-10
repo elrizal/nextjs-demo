@@ -10,7 +10,7 @@ class ShowCards extends Component {
     selectedPostId: null
   };
   componentDidMount() {
-    axios.get("../data/posts.json").then(response => {
+    axios.get("https://jsonplaceholder.typicode.com/posts").then(response => {
       const posts = response.data.slice(0, 10);
       const updatedPosts = posts.map(post => {
         return {

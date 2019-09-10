@@ -1,5 +1,5 @@
 import CssBaseline from '@material-ui/core/CssBaseline';
-import NavBar from '../components/navbar';
+import NavBar from '../components/navbar/navbar';
 
 export default function Layout(props) {
     return (
